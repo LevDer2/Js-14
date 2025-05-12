@@ -188,3 +188,18 @@ const getUsersWithGender = (users, gender) => {
 };
 
 console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
+
+// Task 4
+const getInactiveUsers = users => {
+  return  users.filter((user) => !user.isActive)
+};
+
+console.log(getInactiveUsers(users)); // [об'єкт Moore Hensley, об'єкт Ross Vazquez, об'єкт Blackburn Dotson]
+
+// Task 5
+const getUserWithEmail = (users, email) => {
+  return users.filter((user) => user.email === email)
+};
+
+console.log(getUserWithEmail(users, 'shereeanthony@kog.com')); // {об'єкт користувача Sheree Anthony}
+console.log(getUserWithEmail(users, 'elmahead@omatom.com')); // {об'єкт користувача Elma Head}
