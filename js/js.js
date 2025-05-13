@@ -198,7 +198,7 @@ console.log(getInactiveUsers(users)); // [об'єкт Moore Hensley, об'єкт
 
 // Task 5
 const getUserWithEmail = (users, email) => {
-  return users.filter((user) => user.email === email)
+  return users.find((user) => user.email === email)
 };
 
 console.log(getUserWithEmail(users, 'shereeanthony@kog.com')); // {об'єкт користувача Sheree Anthony}
